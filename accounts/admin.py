@@ -5,6 +5,8 @@ from .models import CustomUser
 from .forms import CustomUserChangeForm,CustomUserCreationForm
 
 
+# The class `CustomUserAdmin` extends `UserAdmin` and customizes the admin interface for the
+# `CustomUser` model.
 class CustomUserAdmin(UserAdmin):
     add_form = CustomUserCreationForm
     form = CustomUserChangeForm

@@ -133,6 +133,8 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
+# The `REST_FRAMEWORK` variable in the Django settings file is a dictionary that contains
+# configuration options for the Django REST framework.
 REST_FRAMEWORK ={
     "DEFAULT_PERMISSION_CLASSES":[
         "rest_framework.permissions.IsAuthenticated",

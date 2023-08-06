@@ -1,3 +1,5 @@
+# This code is registering the `Task` model in the Django admin site and customizing its display in
+# the admin interface.
 from django.contrib import admin
 
 from . import models
