@@ -13,7 +13,7 @@ class Task(TimeStamp):
     task_name = models.CharField(max_length=255)
     task_description = models.TextField()
     complete  = models.BooleanField(default=False)
-    other_explanation = models.TextField()
+    other_explanation = models.TextField(null=True, blank=True)
 
     class Meta:
         verbose_name_plural = "tasks"
