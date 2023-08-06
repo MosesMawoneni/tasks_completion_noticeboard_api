@@ -3,10 +3,11 @@ from django.contrib.auth import get_user_model
 
 from .models import Task
 from .serializers import TaskSerializer, WorkerSerializer
-from .permissions import IsPlannerOrReadOnly
+from .permissions import IsPlannerOrReadOnly,IsWorkerOrReadOnly
 
 
 class TaskViewSet(viewsets.ModelViewSet):
+    permission_classes = [IsWorkerOrReadOnly]
     serializer_class = TaskSerializer
     queryset = Task.objects.all()
 
