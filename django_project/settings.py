@@ -37,11 +37,18 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django.contrib.sites",
 
     #3rd party apps
     "rest_framework",
     "django_filters",
     "corsheaders",
+    "dj_rest_auth",
+    "rest_framework.authtoken",
+    "allauth",
+    "allauth.account",
+    "allauth.socialaccount",
+    "dj_rest_auth.registration",
 
     #local apps
     "accounts",
@@ -56,6 +63,7 @@ CSRF_TRUSTED_ORIGINS = [
     "https://localhost:3000",
 ]
 
+SITE_ID = 1
 AUTH_USER_MODEL = "accounts.CustomUser"
 
 MIDDLEWARE = [
